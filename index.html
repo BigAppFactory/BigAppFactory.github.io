@@ -1,1 +1,64 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="BigAppFactory" />
+        <link rel="manifest" href="/site.webmanifest" />
+      
+        <title>Big App Factory</title>
+      
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <!-- Tailwind Custom Colors & Fonts -->
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  navy: '#213448',
+                  mutedBlue: '#547792',
+                  skyBlue: '#94B4C1',
+                  white: '#FFFFFF'
+                },
+                fontFamily: {
+                  sans: ['Dosis', 'sans-serif'],
+                  serif: ['"Merriweather"', 'serif']
+                }
+              }
+            }
+          }
+        </script>
+      
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    </head>
+      
+    <body class="font-serif min-h-screen flex flex-col">
+    <header class="bg-navy text-white p-6 text-center">
+        <img src="./img/logo.svg"/>
+    </header>
+
+    <main class="flex-grow p-6 max-w-3xl mx-auto">
+        <div>
+            <h1 class="text-4xl font-bold font-sans mb-4">Welcome</h2>
+            <p class="font-light mb-4">
+                We build apps — bold, beautiful, and built to scale. Whether it’s crafting polished user experiences, solving thorny architectural problems, or consulting on your next big project, Big App Factory has you covered.
+            </p>
+            <p>
+                Stay tuned as we roll out more apps and services under our umbrella.
+            </p>
+        </div>
+    </main>
+
+    <footer class="font-sans mt-12 p-6 text-center bg-navy text-white ">
+        &copy; 2025 Big App Factory LLC. All rights reserved.
+    </footer>
+    </body>
+</html>
